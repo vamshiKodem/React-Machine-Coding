@@ -1,0 +1,23 @@
+.gridLights-container {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.cell-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px
+}
+
+
+.cell {
+    height: 100px;
+    width: 100px;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+.cell.selected {
+    background-color: green;
+}

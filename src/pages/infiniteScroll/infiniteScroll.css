@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.products-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 20px;
+}
+
+.product-container {
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.product-container .product-img {
+    width: 300px;
+    height: 250px;
+    overflow: auto;
+    margin: auto;
+    margin-top: 10px;
+}
+
+
+@media (max-width: 1000px) {
+    .products-container {
+        grid-template-columns: auto auto;
+    }
+}

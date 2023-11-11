@@ -3,6 +3,7 @@ import { GridLights } from "./pages/gridLights/gridLights";
 import { Pagination } from "./pages/pagination/pagination";
 import { InfiniteScroll } from "./pages/infiniteScroll/infiniteScroll";
 import { Outlook } from "./pages/outlook/outlook";
+import { CustomMemo } from "./customHooks/useMemo/customMemo";
 
 const App = () => {
   return (
@@ -10,7 +11,8 @@ const App = () => {
       {/* <GridLights /> */}
       {/* <Pagination /> */}
       {/* <InfiniteScroll /> */}
-      <Outlook />
+      {/* <Outlook /> */}
+      <CustomMemo />
     </div>
   );
 };

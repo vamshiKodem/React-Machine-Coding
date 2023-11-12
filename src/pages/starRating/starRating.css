@@ -1,0 +1,9 @@
+.star-icon {
+    height: 30px;
+    width: 30px;
+    color: gray;
+}
+
+.star-icon.active {
+    color: gold;
+}

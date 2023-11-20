@@ -1,0 +1,35 @@
+.root-container {
+    margin: 20px 40px;
+}
+
+div {
+    cursor: pointer;
+    user-select: none
+}
+
+.item-container {
+    margin-left: 10px;
+    display: none;
+}
+
+.item-container.show {
+    display: block
+}
+
+.folder-text {
+    width: 200px;
+    background-color: rgb(219, 213, 213);
+    margin: 5px 0px;
+    padding: 5px;
+    border-radius: 3px;
+    display: flex;
+    justify-content: space-between
+}
+
+.input-wrapper {
+    padding: 0px;
+}
+
+.input-add {
+    padding: 0;
+}

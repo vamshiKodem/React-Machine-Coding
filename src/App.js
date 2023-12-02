@@ -6,6 +6,8 @@ import { Outlook } from "./pages/outlook/outlook";
 import { CustomMemo } from "./customHooks/useMemo/customMemo";
 import { FileExplorer } from "./pages/fileExplorer/fileExplorer";
 import { StarRating } from "./pages/starRating/starRating";
+import { LocalStorage } from "./customHooks/useLocalStorage/localStorage";
+import { TicTacToe } from "./pages/ticTacToe/ticTacToe";
 
 const App = () => {
   return (
@@ -16,7 +18,9 @@ const App = () => {
       {/* <Outlook /> */}
       {/* <CustomMemo /> */}
       {/* <FileExplorer /> */}
-      <StarRating />
+      {/* <LocalStorage /> */}
+      {/* <StarRating /> */}
+      <TicTacToe />
     </div>
   );
 };

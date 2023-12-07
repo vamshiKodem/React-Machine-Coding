@@ -1,0 +1,21 @@
+.drag-drop-container {
+    display: flex;
+    justify-content: space-between;
+    height: 100vh;
+}
+
+.drag-list {
+    width: 100px;
+    height: 30px;
+    background-color: khaki;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.drop-container {
+    height: 100vh;
+    border: 1px solid darkblue;
+    width: 500px;
+}

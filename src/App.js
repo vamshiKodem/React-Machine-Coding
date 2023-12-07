@@ -8,6 +8,7 @@ import { FileExplorer } from "./pages/fileExplorer/fileExplorer";
 import { StarRating } from "./pages/starRating/starRating";
 import { LocalStorage } from "./customHooks/useLocalStorage/localStorage";
 import { TicTacToe } from "./pages/ticTacToe/ticTacToe";
+import { DragAndDrop } from "./pages/dragAndDrop/dragAndDrop";
 
 const App = () => {
   return (
@@ -20,7 +21,8 @@ const App = () => {
       {/* <FileExplorer /> */}
       {/* <LocalStorage /> */}
       {/* <StarRating /> */}
-      <TicTacToe />
+      {/* <TicTacToe /> */}
+      <DragAndDrop />
     </div>
   );
 };

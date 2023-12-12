@@ -1,0 +1,22 @@
+.carousel-container {
+    height: 100vh;
+    padding: 0px 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel-image {
+    height: 400px;
+    width: 500px;
+    object-fit: contain;
+    margin: 0 40px;
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: block
+}

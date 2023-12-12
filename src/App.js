@@ -6,9 +6,9 @@ import { Outlook } from "./pages/outlook/outlook";
 import { CustomMemo } from "./customHooks/useMemo/customMemo";
 import { FileExplorer } from "./pages/fileExplorer/fileExplorer";
 import { StarRating } from "./pages/starRating/starRating";
-import { LocalStorage } from "./customHooks/useLocalStorage/localStorage";
 import { TicTacToe } from "./pages/ticTacToe/ticTacToe";
 import { DragAndDrop } from "./pages/dragAndDrop/dragAndDrop";
+import { Carousel } from "./pages/carousel/carousel";
 
 const App = () => {
   return (
@@ -19,10 +19,10 @@ const App = () => {
       {/* <Outlook /> */}
       {/* <CustomMemo /> */}
       {/* <FileExplorer /> */}
-      {/* <LocalStorage /> */}
       {/* <StarRating /> */}
       {/* <TicTacToe /> */}
-      <DragAndDrop />
+      {/* <DragAndDrop /> */}
+      <Carousel />
     </div>
   );
 };

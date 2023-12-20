@@ -9,6 +9,7 @@ import { StarRating } from "./pages/starRating/starRating";
 import { TicTacToe } from "./pages/ticTacToe/ticTacToe";
 import { DragAndDrop } from "./pages/dragAndDrop/dragAndDrop";
 import { Carousel } from "./pages/carousel/carousel";
+import { CustomEffect } from "./customHooks/useEffect/customEffect";
 
 const App = () => {
   return (
@@ -22,7 +23,8 @@ const App = () => {
       {/* <StarRating /> */}
       {/* <TicTacToe /> */}
       {/* <DragAndDrop /> */}
-      <Carousel />
+      {/* <Carousel /> */}
+      <CustomEffect />
     </div>
   );
 };

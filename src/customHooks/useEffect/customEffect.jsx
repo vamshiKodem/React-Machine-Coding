@@ -7,11 +7,11 @@ export const CustomEffect = () => {
 
   useCustomEffect(() => {
     console.log("first render");
-  }, []);
+  }, [count1]);
 
   useEffect(() => {
     console.log("useEffect", count1, count2);
-  }, [count1]);
+  }, [count2]);
 
   const onClick = () => {
     setCount2(count2 + 1);

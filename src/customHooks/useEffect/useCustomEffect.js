@@ -7,13 +7,15 @@ export const useCustomEffect = (callback, dependencyArray) => {
   if (isFirstRender.current) {
     callback();
     isFirstRender.current = false;
+    prevDependencyRef.current = dependencyArray || [];
     return;
   }
-
+  console.log(prevDependencyRef.current, dependencyArray);
   const isDependencyChanged =
-    JSON.stringify(prevDependencyRef) === JSON.stringify(dependencyArray);
+    JSON.stringify(prevDependencyRef.current) ===
+    JSON.stringify(dependencyArray);
 
-  if (isDependencyChanged) {
+  if (!isDependencyChanged) {
     callback();
   }
 

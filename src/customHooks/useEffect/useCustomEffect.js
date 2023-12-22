@@ -1,5 +1,15 @@
 import { useRef } from "react";
 
+const isEqual = (previous, current) => {
+  if (previous.length !== current.length || previous.length === 0) return false;
+  for (let i = 0; i < previous.length; i++) {
+    if (previous[i] !== current[i]) {
+      return false;
+    }
+  }
+  return true;
+};
+
 export const useCustomEffect = (callback, dependencyArray) => {
   const isFirstRender = useRef(true);
   const prevDependencyRef = useRef([]);
@@ -10,10 +20,11 @@ export const useCustomEffect = (callback, dependencyArray) => {
     prevDependencyRef.current = dependencyArray || [];
     return;
   }
-  console.log(prevDependencyRef.current, dependencyArray);
-  const isDependencyChanged =
-    JSON.stringify(prevDependencyRef.current) ===
-    JSON.stringify(dependencyArray);
+
+  const isDependencyChanged = isEqual(
+    prevDependencyRef.current,
+    dependencyArray
+  );
 
   if (!isDependencyChanged) {
     callback();

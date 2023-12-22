@@ -5,7 +5,7 @@ export const useInfiniteScroll = () => {
   const [page, setPage] = useState(0);
 
   const GET_PRODUCTS = new URL("https://dummyjson.com/products?limit=15");
-  const observer = useRef();
+  const observer = useRef(null);
 
   const getProducts = async () => {
     try {

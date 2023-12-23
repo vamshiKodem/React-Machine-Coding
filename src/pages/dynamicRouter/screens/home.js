@@ -19,7 +19,7 @@ export const Home = () => {
 
   return (
     <div>
-      Home
+      Home Screen
       <button onClick={onAboutClick}>Go to About screen</button>
       {userList.map((user) => (
         <button onClick={() => onUserClick(user)} key={user.id}>

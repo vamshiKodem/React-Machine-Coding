@@ -10,6 +10,7 @@ import { TicTacToe } from "./pages/ticTacToe/ticTacToe";
 import { DragAndDrop } from "./pages/dragAndDrop/dragAndDrop";
 import { Carousel } from "./pages/carousel/carousel";
 import { CustomEffect } from "./customHooks/useEffect/customEffect";
+import { DynamicRouter } from "./pages/dynamicRouter/dynamicRouter";
 
 const App = () => {
   return (
@@ -24,7 +25,8 @@ const App = () => {
       {/* <TicTacToe /> */}
       {/* <DragAndDrop /> */}
       {/* <Carousel /> */}
-      <CustomEffect />
+      {/* <CustomEffect /> */}
+      <DynamicRouter />
     </div>
   );
 };

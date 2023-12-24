@@ -11,6 +11,7 @@ import { DragAndDrop } from "./pages/dragAndDrop/dragAndDrop";
 import { Carousel } from "./pages/carousel/carousel";
 import { CustomEffect } from "./customHooks/useEffect/customEffect";
 import { DynamicRouter } from "./pages/dynamicRouter/dynamicRouter";
+import { ProgressBar } from "./pages/progressBar/progressBar";
 
 const App = () => {
   return (
@@ -26,7 +27,8 @@ const App = () => {
       {/* <DragAndDrop /> */}
       {/* <Carousel /> */}
       {/* <CustomEffect /> */}
-      <DynamicRouter />
+      <ProgressBar />
+      {/* <DynamicRouter /> */}
     </div>
   );
 };

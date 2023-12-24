@@ -14,7 +14,7 @@ export const Home = () => {
   };
 
   const onUserClick = (user) => {
-    navigation(`/${user.id}`, { state: { userData: user } });
+    navigation(`user/${user.id}`, { state: { userData: user } });
   };
 
   return (

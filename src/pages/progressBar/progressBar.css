@@ -1,0 +1,22 @@
+:root {
+    --primaryColor: green;
+    --secondaryColor: gray;
+}
+
+.progressBar-container {
+    padding: 50px 200px;
+}
+
+.outer-bar {
+    width: 400px;
+    height: 20px;
+    border: solid var(--secondaryColor) 1px;
+    border-radius: 10px;
+}
+
+.inner-bar {
+    width: 40px;
+    height: 20px;
+    border-radius: 10px;
+    background-color: var(--primaryColor);
+}

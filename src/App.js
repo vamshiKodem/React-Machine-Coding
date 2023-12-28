@@ -12,6 +12,7 @@ import { Carousel } from "./pages/carousel/carousel";
 import { CustomEffect } from "./customHooks/useEffect/customEffect";
 import { DynamicRouter } from "./pages/dynamicRouter/dynamicRouter";
 import { ProgressBar } from "./pages/progressBar/progressBar";
+import { AccordionUI } from "./pages/accordion/accordion";
 
 const App = () => {
   return (
@@ -27,7 +28,8 @@ const App = () => {
       {/* <DragAndDrop /> */}
       {/* <Carousel /> */}
       {/* <CustomEffect /> */}
-      <ProgressBar />
+      {/* <ProgressBar /> */}
+      <AccordionUI />
       {/* <DynamicRouter /> */}
     </div>
   );

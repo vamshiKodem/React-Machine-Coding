@@ -45,7 +45,11 @@ export const AccordionUI = () => {
   return (
     <>
       {accordionData.map((accordion) => (
-        <Accordion title={accordion.title} description={accordion.content} />
+        <Accordion
+          key={accordion.title}
+          title={accordion.title}
+          description={accordion.content}            
+        />
       ))}
     </>
   );

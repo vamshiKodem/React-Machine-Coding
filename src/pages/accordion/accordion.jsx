@@ -48,7 +48,7 @@ export const AccordionUI = () => {
         <Accordion
           key={accordion.title}
           title={accordion.title}
-          description={accordion.content}            
+          description={accordion.content}          
         />
       ))}
     </>

@@ -29,8 +29,8 @@ const App = () => {
       {/* <Carousel /> */}
       {/* <CustomEffect /> */}
       {/* <ProgressBar /> */}
-      <AccordionUI />
-      {/* <DynamicRouter /> */}
+      {/* <AccordionUI /> */}
+      <DynamicRouter />
     </div>
   );
 };

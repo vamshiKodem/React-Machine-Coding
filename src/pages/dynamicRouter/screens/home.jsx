@@ -1,5 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
+import { useThemeContext } from "../themeContext";
+import "../dynamicRouter.css";
 
 export const Home = () => {
   const userList = [

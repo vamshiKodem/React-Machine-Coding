@@ -1,5 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
+import "../dynamicRouter.css";
 
 export const About = () => {
   const navigate = useNavigate();

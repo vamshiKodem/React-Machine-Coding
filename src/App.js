@@ -13,6 +13,8 @@ import { CustomEffect } from "./customHooks/useEffect/customEffect";
 import { DynamicRouter } from "./pages/dynamicRouter/dynamicRouter";
 import { ProgressBar } from "./pages/progressBar/progressBar";
 import { AccordionUI } from "./pages/accordion/accordion";
+import { LanguageProvider } from "./pages/multiLanguageApp/multiLanguageContext";
+import { MultiLanguageApp } from "./pages/multiLanguageApp/multiLanguageApp";
 
 const App = () => {
   return (
@@ -30,7 +32,10 @@ const App = () => {
       {/* <CustomEffect /> */}
       {/* <ProgressBar /> */}
       {/* <AccordionUI /> */}
-      <DynamicRouter />
+      {/* <DynamicRouter /> */}
+      <LanguageProvider>
+        <MultiLanguageApp />
+      </LanguageProvider>
     </div>
   );
 };

@@ -32,3 +32,11 @@ nav {
   gap: 20px;
   padding-left: 30px;
 }
+
+.dynamic-router-button {
+  height: 50px;
+  width: 200px;
+  background-color: rgb(185, 134, 142);
+  border: none;
+  cursor: pointer;
+}

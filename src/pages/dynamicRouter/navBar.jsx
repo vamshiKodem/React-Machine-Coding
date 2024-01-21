@@ -19,7 +19,9 @@ export const NabBar = () => {
         <Link className="nav-link" to={"/about"}>
           About
         </Link>
-        <button onClick={onChangeThemeClick}>Change Theme</button>
+        <button className="dynamic-router-button" onClick={onChangeThemeClick}>
+          Change Theme
+        </button>
       </div>
     </nav>
   );

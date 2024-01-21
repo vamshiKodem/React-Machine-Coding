@@ -8,7 +8,9 @@ export const About = () => {
   return (
     <div>
       About
-      <button onClick={() => navigate("/")}>Go to About screen</button>
+      <button className="dynamic-router-button" onClick={() => navigate("/")}>
+        Go to About screen
+      </button>
     </div>
   );
 };

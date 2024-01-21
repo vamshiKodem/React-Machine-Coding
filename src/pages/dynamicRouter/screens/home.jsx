@@ -22,9 +22,15 @@ export const Home = () => {
   return (
     <div>
       Home
-      <button onClick={onAboutClick}>Go to About screen</button>
+      <button className="dynamic-router-button" onClick={onAboutClick}>
+        Go to About screen
+      </button>
       {userList.map((user) => (
-        <button onClick={() => onUserClick(user)} key={user.id}>
+        <button
+          className="dynamic-router-button"
+          onClick={() => onUserClick(user)}
+          key={user.id}
+        >
           {user.name}
         </button>
       ))}

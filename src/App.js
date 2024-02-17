@@ -15,6 +15,7 @@ import { ProgressBar } from "./pages/progressBar/progressBar";
 import { AccordionUI } from "./pages/accordion/accordion";
 import { LanguageProvider } from "./pages/multiLanguageApp/multiLanguageContext";
 import { MultiLanguageApp } from "./pages/multiLanguageApp/multiLanguageApp";
+import { HOC } from "./pages/hoc/hoc";
 
 const App = () => {
   return (
@@ -33,9 +34,10 @@ const App = () => {
       {/* <ProgressBar /> */}
       {/* <AccordionUI /> */}
       {/* <DynamicRouter /> */}
-      <LanguageProvider>
+      {/* <LanguageProvider>
         <MultiLanguageApp />
-      </LanguageProvider>
+      </LanguageProvider> */}
+      <HOC />
     </div>
   );
 };

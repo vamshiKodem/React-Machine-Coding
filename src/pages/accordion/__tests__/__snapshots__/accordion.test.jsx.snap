@@ -1,0 +1,48 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders button with correct text 1`] = `
+<div>
+  <div
+    class="accordion-container"
+  >
+    <div
+      class="accordion-heading"
+    >
+      <h2>
+        Section 1
+      </h2>
+      <span>
+        +
+      </span>
+    </div>
+  </div>
+  <div
+    class="accordion-container"
+  >
+    <div
+      class="accordion-heading"
+    >
+      <h2>
+        Section 2
+      </h2>
+      <span>
+        +
+      </span>
+    </div>
+  </div>
+  <div
+    class="accordion-container"
+  >
+    <div
+      class="accordion-heading"
+    >
+      <h2>
+        Section 3
+      </h2>
+      <span>
+        +
+      </span>
+    </div>
+  </div>
+</div>
+`;

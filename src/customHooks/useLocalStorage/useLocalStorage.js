@@ -1,5 +1,5 @@
 export const useLocalStorage = (key) => {
-  const getItem = () => {
+  const getItem = (key) => {
     try {
       const result = window.localStorage.getItem(key);
       return result ? JSON.parse(result) : undefined;

@@ -16,6 +16,7 @@ import { AccordionUI } from "./pages/accordion/accordion";
 import { LanguageProvider } from "./pages/multiLanguageApp/multiLanguageContext";
 import { MultiLanguageApp } from "./pages/multiLanguageApp/multiLanguageApp";
 import { HOC } from "./pages/hoc/hoc";
+import { ParentComponent } from "./pages/ParentChildRelation/parentComponent";
 
 const App = () => {
   return (
@@ -37,7 +38,8 @@ const App = () => {
       {/* <LanguageProvider>
         <MultiLanguageApp />
       </LanguageProvider> */}
-      <HOC />
+      {/* <HOC /> */}
+      <ParentComponent />
     </div>
   );
 };

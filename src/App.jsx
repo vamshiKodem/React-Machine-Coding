@@ -17,6 +17,7 @@ import { LanguageProvider } from "./pages/multiLanguageApp/multiLanguageContext"
 import { MultiLanguageApp } from "./pages/multiLanguageApp/multiLanguageApp";
 import { HOC } from "./pages/hoc/hoc";
 import { ParentComponent } from "./pages/ParentChildRelation/parentComponent";
+import { Todo } from "./pages/todo/todo";
 
 const App = () => {
   return (
@@ -39,7 +40,9 @@ const App = () => {
         <MultiLanguageApp />
       </LanguageProvider> */}
       {/* <HOC /> */}
-      <ParentComponent />
+      {/* <ParentComponent />
+       */}
+      <Todo />
     </div>
   );
 };

@@ -1,0 +1,20 @@
+.todo-container {
+  padding: 20px 100px;
+
+  li {
+    text-decoration: none;
+    list-style: none;
+    min-height: 30px;
+    width: 100%;
+    border: 1px solid green;
+    margin: 10px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+  }
+
+  .completed {
+    text-decoration: line-through;
+  }
+}

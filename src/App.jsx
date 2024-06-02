@@ -18,6 +18,7 @@ import { MultiLanguageApp } from "./pages/multiLanguageApp/multiLanguageApp";
 import { HOC } from "./pages/hoc/hoc";
 import { ParentComponent } from "./pages/ParentChildRelation/parentComponent";
 import { Todo } from "./pages/todo/todo";
+import { PromiseMethods } from "./pages/promiseMethods/promiseMethods";
 
 const App = () => {
   return (
@@ -42,7 +43,8 @@ const App = () => {
       {/* <HOC /> */}
       {/* <ParentComponent />
        */}
-      <Todo />
+      {/* <Todo /> */}
+      <PromiseMethods />
     </div>
   );
 };

@@ -19,6 +19,7 @@ import { HOC } from "./pages/hoc/hoc";
 import { ParentComponent } from "./pages/ParentChildRelation/parentComponent";
 import { Todo } from "./pages/todo/todo";
 import { PromiseMethods } from "./pages/promiseMethods/promiseMethods";
+import { Jira } from "./pages/jira/jira";
 
 const App = () => {
   return (
@@ -44,7 +45,8 @@ const App = () => {
       {/* <ParentComponent />
        */}
       {/* <Todo /> */}
-      <PromiseMethods />
+      {/* <PromiseMethods /> */}
+      <Jira />
     </div>
   );
 };

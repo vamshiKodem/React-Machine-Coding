@@ -1,0 +1,29 @@
+.container {
+  margin: 20px 50px;
+}
+
+.jira-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.list-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid gray;
+  margin: 0px 30px;
+}
+
+.list {
+  border: 1px solid yellow;
+  min-height: 30px;
+  width: 80%;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.form-container {
+  margin-bottom: 20px;
+}

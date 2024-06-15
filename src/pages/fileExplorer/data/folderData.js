@@ -1,7 +1,6 @@
 export const explorer = [
   {
     id: 0,
-    id: 1,
     isFolder: true,
     name: "Root",
     items: [

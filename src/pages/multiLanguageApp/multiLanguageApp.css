@@ -1,11 +1,11 @@
 .multiLanguage-container {
-    padding: 20px 100px;
+  padding: 20px 100px;
 }
 
-button {
-    height: 50px;
-    width: 130px;
-    font-size: 15px;
-    background-color: rebeccapurple;
-    border-radius: 5px;
+.change-language-btn {
+  height: 50px;
+  width: 130px;
+  font-size: 15px;
+  background-color: rebeccapurple;
+  border-radius: 5px;
 }

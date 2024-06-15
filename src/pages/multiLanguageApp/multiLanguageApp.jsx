@@ -10,7 +10,9 @@ export const MultiLanguageApp = () => {
     <div className="multiLanguage-container">
       <h1>{translatedContent.title}</h1>
       <p>{translatedContent.description}</p>
-      <button onClick={onChangeLanguageClick}>Change Language</button>
+      <button className="change-language-btn" onClick={onChangeLanguageClick}>
+        Change Language
+      </button>
     </div>
   );
 };

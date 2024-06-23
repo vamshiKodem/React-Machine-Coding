@@ -20,6 +20,7 @@ import { ParentComponent } from "./pages/ParentChildRelation/parentComponent";
 import { Todo } from "./pages/todo/todo";
 import { PromiseMethods } from "./pages/promiseMethods/promiseMethods";
 import { Jira } from "./pages/jira/jira";
+import { Stopwatch } from "./pages/stopwatch/stopwatch";
 
 const App = () => {
   return (
@@ -46,7 +47,8 @@ const App = () => {
        */}
       {/* <Todo /> */}
       {/* <PromiseMethods /> */}
-      <Jira />
+      {/* <Jira /> */}
+      <Stopwatch />
     </div>
   );
 };

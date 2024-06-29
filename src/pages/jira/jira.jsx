@@ -23,8 +23,13 @@ export const Jira = () => {
           value={newTask.description}
           onChange={onFormChange}
         />
-        <select name="type" id="type" onChange={onFormChange}>
-          <option value="">Please Select Type</option>
+        <select
+          value={newTask.type}
+          name="type"
+          id="type"
+          onChange={onFormChange}
+        >
+          <option>Please Select Type</option>
           <option value="open">Open</option>
           <option value="progress">progress</option>
           <option value="done">done</option>
@@ -39,7 +44,8 @@ export const Jira = () => {
             <h4>{task.toUpperCase()}</h4>
             {tasks[task].map((list) => (
               <div key={list.id} className="list">
-                <p>{list.title}</p>
+                <h6>{list.title}</h6>
+                <p>{list.description}</p>
               </div>
             ))}
           </div>

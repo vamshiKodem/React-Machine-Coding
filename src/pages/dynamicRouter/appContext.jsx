@@ -6,15 +6,20 @@ export const useAppContext = () => {
   return useContext(AppContext);
 };
 
+const getLoginStatus = () => {
+  return JSON.parse(localStorage.getItem("isLoggedIn"));
+};
+
 export const ThemeProvider = ({ children }) => {
   const [isDarkTheme, setIsDarkTheme] = useState(false);
-  const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const [isLoggedIn, setIsLoggedIn] = useState(getLoginStatus());
 
   const toggleTheme = () => {
     setIsDarkTheme((prev) => !prev);
   };
 
   const toggleLoginStatus = (status) => {
+    localStorage.setItem("isLoggedIn", JSON.stringify(status));
     setIsLoggedIn(status);
   };
 

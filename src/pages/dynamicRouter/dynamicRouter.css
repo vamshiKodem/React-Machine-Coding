@@ -1,17 +1,21 @@
+:root {
+  --white: white;
+  --black: black;
+}
+
 [data-theme="light"] {
-  --background-color: white;
-  --color: black;
+  --background-color: var(--white);
+  --color: var(--black);
 }
 
 [data-theme="dark"] {
-  --background-color: black;
-  --color: white;
+  --background-color: var(--black);
+  --color: var(--white);
 }
-
 
 body {
   background-color: var(--background-color);
-  color: var(--color)
+  color: var(--color);
 }
 
 nav {

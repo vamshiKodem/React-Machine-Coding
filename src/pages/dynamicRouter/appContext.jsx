@@ -1,16 +1,21 @@
 import { createContext, useContext, useEffect, useState } from "react";
 
-const ThemeContext = createContext();
+const AppContext = createContext();
 
-export const useThemeContext = () => {
-  return useContext(ThemeContext);
+export const useAppContext = () => {
+  return useContext(AppContext);
 };
 
 export const ThemeProvider = ({ children }) => {
   const [isDarkTheme, setIsDarkTheme] = useState(false);
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
 
   const toggleTheme = () => {
     setIsDarkTheme((prev) => !prev);
+  };
+
+  const toggleLoginStatus = (status) => {
+    setIsLoggedIn(status);
   };
 
   const theme = isDarkTheme ? "dark" : "light";
@@ -20,8 +25,10 @@ export const ThemeProvider = ({ children }) => {
   }, [isDarkTheme, theme]);
 
   return (
-    <ThemeContext.Provider value={{ theme, toggleTheme }}>
+    <AppContext.Provider
+      value={{ theme, toggleTheme, isLoggedIn, toggleLoginStatus }}
+    >
       {children}
-    </ThemeContext.Provider>
+    </AppContext.Provider>
   );
 };

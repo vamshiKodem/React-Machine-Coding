@@ -1,6 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import { useThemeContext } from "../themeContext";
+import { useThemeContext } from "../appContext";
 import "../dynamicRouter.css";
 
 export const Home = () => {

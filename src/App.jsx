@@ -21,6 +21,7 @@ import { Todo } from "./pages/todo/todo";
 import { PromiseMethods } from "./pages/promiseMethods/promiseMethods";
 import { Jira } from "./pages/jira/jira";
 import { Stopwatch } from "./pages/stopwatch/stopwatch";
+import { Accordion2 } from "./pages/accordion2/accordion2";
 
 const App = () => {
   return (
@@ -48,7 +49,8 @@ const App = () => {
       {/* <Todo /> */}
       {/* <PromiseMethods /> */}
       {/* <Jira /> */}
-      <Stopwatch />
+      {/* <Stopwatch /> */}
+      <Accordion2 />
     </div>
   );
 };

@@ -20,21 +20,21 @@ const AccordionItem = ({
 };
 
 const Accordion = ({ items }) => {
-  const [selectedIndex, setSelectedIndex] = useState(null);
+  const [selectedAccordionId, setSelectedAccordionId] = useState(null);
 
-  const onAccordionTitleClick = (index) => {
-    setSelectedIndex(selectedIndex === index ? null : index);
+  const onAccordionTitleClick = (id) => {
+    setSelectedAccordionId(selectedAccordionId === id ? null : id);
   };
 
   return (
     <>
-      {items.map((item, index) => (
+      {items.map((item) => (
         <AccordionItem
-          key={index}
+          key={item.id}
           title={item.title}
           description={item.content}
-          isVisible={selectedIndex === index}
-          onAccordionTitleClick={() => onAccordionTitleClick(index)}
+          isVisible={selectedAccordionId === item.id}
+          onAccordionTitleClick={() => onAccordionTitleClick(item.id)}
         />
       ))}
     </>
@@ -44,6 +44,7 @@ const Accordion = ({ items }) => {
 export const Accordion2 = () => {
   const accordionData = [
     {
+      id: 1,
       title: "Section 1",
       content: `Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis sapiente
               laborum cupiditate possimus labore, hic temporibus velit dicta earum
@@ -51,6 +52,7 @@ export const Accordion2 = () => {
               voluptatem.`,
     },
     {
+      id: 2,
       title: "Section 2",
       content: `Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia veniam
               reprehenderit nam assumenda voluptatem ut. Ipsum eius dicta, officiis
@@ -60,6 +62,7 @@ export const Accordion2 = () => {
               Repudiandae, mollitia id reprehenderit a ab odit!`,
     },
     {
+      id: 3,
       title: "Section 3",
       content: `Sapiente expedita hic obcaecati, laboriosam similique omnis architecto ducimus magnam accusantium corrupti
               quam sint dolore pariatur perspiciatis, necessitatibus rem vel dignissimos

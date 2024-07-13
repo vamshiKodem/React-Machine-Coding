@@ -3,7 +3,18 @@ import "./trafficLight.css";
 import { useTrafficLight } from "./useTrafficLight";
 
 export const TrafficLight = () => {
-  const {} = useTrafficLight();
+  const { activeSignal, lightConfig } = useTrafficLight();
 
-  return <h1>Traffic Light</h1>;
+  return (
+    <div className="container">
+      <div className="traffic-light-container">
+        {Object.keys(lightConfig).map((val) => (
+          <div
+            key={val}
+            className={`light ${val === activeSignal ? val : ""}`}
+          ></div>
+        ))}
+      </div>
+    </div>
+  );
 };

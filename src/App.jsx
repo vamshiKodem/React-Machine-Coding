@@ -22,6 +22,7 @@ import { PromiseMethods } from "./pages/promiseMethods/promiseMethods";
 import { Jira } from "./pages/jira/jira";
 import { Stopwatch } from "./pages/stopwatch/stopwatch";
 import { Accordion2 } from "./pages/accordion2/accordion2";
+import { TrafficLight } from "./pages/trafficLight/trafficLight";
 
 const App = () => {
   return (
@@ -50,7 +51,8 @@ const App = () => {
       {/* <PromiseMethods /> */}
       {/* <Jira /> */}
       {/* <Stopwatch /> */}
-      <Accordion2 />
+      {/* <Accordion2 /> */}
+      <TrafficLight />
     </div>
   );
 };

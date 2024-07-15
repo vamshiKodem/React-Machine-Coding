@@ -1,24 +1,24 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
+
+const lightConfig = {
+  red: {
+    backgroundColor: "red",
+    duration: 4000,
+    next: "green",
+  },
+  orange: {
+    backgroundColor: "orange",
+    duration: 1000,
+    next: "red",
+  },
+  green: {
+    backgroundColor: "green",
+    duration: 3000,
+    next: "orange",
+  },
+};
 
 export const useTrafficLight = () => {
-  const lightConfig = {
-    red: {
-      backgroundColor: "red",
-      duration: 4000,
-      next: "green",
-    },
-    orange: {
-      backgroundColor: "orange",
-      duration: 1000,
-      next: "red",
-    },
-    green: {
-      backgroundColor: "green",
-      duration: 3000,
-      next: "orange",
-    },
-  };
-
   const [activeSignal, setActiveSignal] = useState("green");
 
   useEffect(() => {

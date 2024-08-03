@@ -1,0 +1,21 @@
+.pagination-container {
+  padding: 20px 50px;
+  background-color: wheat;
+}
+
+.list-container {
+  margin: 10px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  padding-left: 10px;
+  width: 50%;
+}
+
+.numeric-btn {
+  padding: 5px;
+}
+
+.selected {
+  background-color: rgb(91, 91, 153);
+}

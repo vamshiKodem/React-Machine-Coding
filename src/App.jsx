@@ -23,7 +23,8 @@ import { Jira } from "./pages/jira/jira";
 import { Stopwatch } from "./pages/stopwatch/stopwatch";
 import { Accordion2 } from "./pages/accordion2/accordion2";
 import { TrafficLight } from "./pages/trafficLight/trafficLight";
-import { Pagination2 } from "./pagination2/pagination2";
+import { Pagination2 } from "./pages/pagination2/pagination2";
+import { CommonPagination } from "./pages/common/pagination/Pagination";
 
 const App = () => {
   return (
@@ -54,7 +55,8 @@ const App = () => {
       {/* <Stopwatch /> */}
       {/* <Accordion2 /> */}
       {/* <TrafficLight /> */}
-      <Pagination2 />
+      {/* <Pagination2 /> */}
+      <CommonPagination />
     </div>
   );
 };

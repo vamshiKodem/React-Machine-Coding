@@ -1,0 +1,26 @@
+.toast-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.toast {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  color: green;
+  border: solid black 1px;
+  height: 50px;
+  min-width: 200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 5px;
+}
+
+.cancel-button {
+  border: none;
+  padding: 5px;
+  background-color: white;
+}

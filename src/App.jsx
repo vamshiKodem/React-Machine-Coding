@@ -25,6 +25,7 @@ import { Accordion2 } from "./pages/accordion2/accordion2";
 import { TrafficLight } from "./pages/trafficLight/trafficLight";
 import { Pagination2 } from "./pages/pagination2/pagination2";
 import { CommonPagination } from "./pages/common/pagination/Pagination";
+import { Toast } from "./pages/toast/toast";
 
 const App = () => {
   return (
@@ -56,7 +57,8 @@ const App = () => {
       {/* <Accordion2 /> */}
       {/* <TrafficLight /> */}
       {/* <Pagination2 /> */}
-      <CommonPagination />
+      {/* <CommonPagination /> */}
+      <Toast />
     </div>
   );
 };

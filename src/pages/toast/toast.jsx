@@ -34,11 +34,13 @@ export const Toast = () => {
           <Card key={list.id} removeToast={removeToast} {...list} />
         ))}
       </div>
-      <button onClick={() => onButtonClick(5000)}>Click Me 5000</button>
-      <button onClick={() => onButtonClick(4000)}>Click Me 4000</button>
-      <button onClick={() => onButtonClick(3000)}>Click Me 3000</button>
-      <button onClick={() => onButtonClick(2000)}>Click Me 2000</button>
-      <button onClick={() => onButtonClick(6000)}>Click Me 6000</button>
+      <div className="button-container">
+        <button onClick={() => onButtonClick(5000)}>Click Me 5000</button>
+        <button onClick={() => onButtonClick(4000)}>Click Me 4000</button>
+        <button onClick={() => onButtonClick(3000)}>Click Me 3000</button>
+        <button onClick={() => onButtonClick(2000)}>Click Me 2000</button>
+        <button onClick={() => onButtonClick(6000)}>Click Me 6000</button>
+      </div>
     </div>
   );
 };

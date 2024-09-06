@@ -1,5 +1,4 @@
 import React, { useCallback, useState } from "react";
-
 import "./toast.css";
 import { Card } from "./card";
 
@@ -8,8 +7,8 @@ export const Toast = () => {
 
   const onButtonClick = (duration) => {
     const id = Math.random();
-    setToastList([
-      ...toastList,
+    setToastList((prev) => [
+      ...prev,
       {
         id,
         message: "This is some random text",
@@ -18,14 +17,11 @@ export const Toast = () => {
     ]);
   };
 
-  const removeToast = useCallback(
-    (id) => {
-      setToastList(toastList.filter((toast) => toast.id !== id));
-
-      console.log(toastList);
-    },
-    [toastList]
-  );
+  const removeToast = useCallback((id) => {
+    setToastList((prevToastList) =>
+      prevToastList.filter((toast) => toast.id !== id)
+    );
+  }, []);
 
   return (
     <div className="toast-container">

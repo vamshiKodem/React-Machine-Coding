@@ -11,7 +11,6 @@ export const useThrottle = (callback, delay) => {
     };
   }, []);
 
-  console.log(delay)
   return (...args) => {
     if(timer.current){
       return;

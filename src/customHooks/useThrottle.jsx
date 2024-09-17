@@ -1,23 +1,23 @@
-import React, { useRef, useEffect } from 'react';
+import { useRef, useEffect } from "react";
 
 export const useThrottle = (callback, delay) => {
   const timer = useRef(null);
 
-  useEffect(()=> {
+  useEffect(() => {
     return () => {
-      if(timer.current){
-        clearTimeout(timer.current)
+      if (timer.current) {
+        clearTimeout(timer.current);
       }
     };
   }, []);
 
   return (...args) => {
-    if(timer.current){
+    if (timer.current) {
       return;
     }
-    timer.current = setTimeout(()=> {
+    timer.current = setTimeout(() => {
       callback(...args);
       timer.current = undefined;
     }, delay);
-  }
-}
+  };
+};

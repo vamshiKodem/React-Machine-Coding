@@ -28,6 +28,7 @@ import { CommonPagination } from "./pages/common/pagination/Pagination";
 import { Toast } from "./pages/toast/toast";
 import { Debounce } from "./customHooks/useDebounce/debounce";
 import { Throttle } from "./customHooks/useThrottle/throttle";
+import { Memoization } from "./customHooks/memoization/memoization";
 
 const App = () => {
   return (
@@ -63,6 +64,7 @@ const App = () => {
       {/* <Toast /> */}
       <Debounce />
       <Throttle />
+      <Memoization />
     </div>
   );
 };

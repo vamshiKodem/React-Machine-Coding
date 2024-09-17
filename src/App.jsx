@@ -27,6 +27,7 @@ import { Pagination2 } from "./pages/pagination2/pagination2";
 import { CommonPagination } from "./pages/common/pagination/Pagination";
 import { Toast } from "./pages/toast/toast";
 import { Debounce } from "./customHooks/useDebounce/debounce";
+import { Throttle } from "./customHooks/useThrottle/throttle";
 
 const App = () => {
   return (
@@ -61,6 +62,7 @@ const App = () => {
       {/* <CommonPagination /> */}
       {/* <Toast /> */}
       <Debounce />
+      <Throttle />
     </div>
   );
 };

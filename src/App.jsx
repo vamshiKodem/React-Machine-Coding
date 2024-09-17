@@ -26,6 +26,7 @@ import { TrafficLight } from "./pages/trafficLight/trafficLight";
 import { Pagination2 } from "./pages/pagination2/pagination2";
 import { CommonPagination } from "./pages/common/pagination/Pagination";
 import { Toast } from "./pages/toast/toast";
+import { Debounce } from "./customHooks/useDebounce/debounce";
 
 const App = () => {
   return (
@@ -58,7 +59,8 @@ const App = () => {
       {/* <TrafficLight /> */}
       {/* <Pagination2 /> */}
       {/* <CommonPagination /> */}
-      <Toast />
+      {/* <Toast /> */}
+      <Debounce />
     </div>
   );
 };

@@ -32,6 +32,7 @@ import { Memoization } from "./customHooks/memoization/memoization";
 
 import { Provider } from "react-redux";
 import { store } from "./store";
+import { ReduxExample } from "./pages/reduxExample/reduxExample";
 
 const App = () => {
   return (
@@ -66,9 +67,10 @@ const App = () => {
         {/* <Pagination2 /> */}
         {/* <CommonPagination /> */}
         {/* <Toast /> */}
-        <Debounce />
+        {/* <Debounce />
         <Throttle />
-        <Memoization />
+        <Memoization /> */}
+        <ReduxExample />
       </div>
     </Provider>
   );

@@ -30,42 +30,47 @@ import { Debounce } from "./customHooks/useDebounce/debounce";
 import { Throttle } from "./customHooks/useThrottle/throttle";
 import { Memoization } from "./customHooks/memoization/memoization";
 
+import { Provider } from "react-redux";
+import { store } from "./store";
+
 const App = () => {
   return (
-    <div className="App">
-      {/* <GridLights /> */}
-      {/* <Pagination /> */}
-      {/* <InfiniteScroll /> */}
-      {/* <Outlook /> */}
-      {/* <CustomMemo /> */}
-      {/* <FileExplorer /> */}
-      {/* <StarRating /> */}
-      {/* <TicTacToe /> */}
-      {/* <DragAndDrop /> */}
-      {/* <Carousel /> */}
-      {/* <CustomEffect /> */}
-      {/* <ProgressBar /> */}
-      {/* <AccordionUI /> */}
-      {/* <DynamicRouter /> */}
-      {/* <LanguageProvider>
+    <Provider store={store}>
+      <div className="App">
+        {/* <GridLights /> */}
+        {/* <Pagination /> */}
+        {/* <InfiniteScroll /> */}
+        {/* <Outlook /> */}
+        {/* <CustomMemo /> */}
+        {/* <FileExplorer /> */}
+        {/* <StarRating /> */}
+        {/* <TicTacToe /> */}
+        {/* <DragAndDrop /> */}
+        {/* <Carousel /> */}
+        {/* <CustomEffect /> */}
+        {/* <ProgressBar /> */}
+        {/* <AccordionUI /> */}
+        {/* <DynamicRouter /> */}
+        {/* <LanguageProvider>
         <MultiLanguageApp />
       </LanguageProvider> */}
-      {/* <HOC /> */}
-      {/* <ParentComponent />
-       */}
-      {/* <Todo /> */}
-      {/* <PromiseMethods /> */}
-      {/* <Jira /> */}
-      {/* <Stopwatch /> */}
-      {/* <Accordion2 /> */}
-      {/* <TrafficLight /> */}
-      {/* <Pagination2 /> */}
-      {/* <CommonPagination /> */}
-      {/* <Toast /> */}
-      <Debounce />
-      <Throttle />
-      <Memoization />
-    </div>
+        {/* <HOC /> */}
+        {/* <ParentComponent />
+         */}
+        {/* <Todo /> */}
+        {/* <PromiseMethods /> */}
+        {/* <Jira /> */}
+        {/* <Stopwatch /> */}
+        {/* <Accordion2 /> */}
+        {/* <TrafficLight /> */}
+        {/* <Pagination2 /> */}
+        {/* <CommonPagination /> */}
+        {/* <Toast /> */}
+        <Debounce />
+        <Throttle />
+        <Memoization />
+      </div>
+    </Provider>
   );
 };
 

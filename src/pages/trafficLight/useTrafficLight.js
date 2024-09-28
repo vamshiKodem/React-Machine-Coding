@@ -27,7 +27,7 @@ export const useTrafficLight = () => {
     }, lightConfig[activeSignal].duration);
 
     return () => clearTimeout(timer);
-  }, [activeSignal, lightConfig]);
+  }, [activeSignal]);
 
   return {
     lightConfig,

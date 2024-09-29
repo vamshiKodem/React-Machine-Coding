@@ -18,8 +18,13 @@ export const useProgressBar = () => {
     };
   }, [percentage]);
 
+  const onResetClick = () => {
+    setPercentage(0);
+  };
+
   return {
     percentage,
     WIDTH,
+    onResetClick,
   };
 };

@@ -33,6 +33,7 @@ import { Memoization } from "./customHooks/memoization/memoization";
 import { Provider } from "react-redux";
 import { store } from "./store";
 import { ReduxExample } from "./pages/reduxExample/reduxExample";
+import { FetchWithCache } from "./customHooks/useFetchWithCache/fetchWithCache";
 
 const App = () => {
   return (
@@ -70,7 +71,8 @@ const App = () => {
         {/* <Debounce />
         <Throttle />
         <Memoization /> */}
-        <ReduxExample />
+        {/* <ReduxExample /> */}
+        <FetchWithCache />
       </div>
     </Provider>
   );

@@ -34,6 +34,7 @@ import { Provider } from "react-redux";
 import { store } from "./store";
 import { ReduxExample } from "./pages/reduxExample/reduxExample";
 import { FetchWithCache } from "./customHooks/useFetchWithCache/fetchWithCache";
+import { SpreadSheet } from "./pages/spreadSheet/spreadSheet";
 
 const App = () => {
   return (
@@ -72,7 +73,8 @@ const App = () => {
         <Throttle />
         <Memoization /> */}
         {/* <ReduxExample /> */}
-        <FetchWithCache />
+        {/* <FetchWithCache /> */}
+        <SpreadSheet />
       </div>
     </Provider>
   );

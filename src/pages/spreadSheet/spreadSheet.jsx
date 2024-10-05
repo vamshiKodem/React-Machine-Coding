@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 
 import "./spreadSheet.css";
 import { Cell } from "./common/cell";
@@ -11,12 +11,15 @@ export const SpreadSheet = () => {
   ];
 
   const [selected, setSelected] = useState(null);
+  const inputRef = useRef(null);
 
   const onCellClick = (id) => {
+    inputRef.current = id;
     setSelected(id);
   };
 
   const onCellBlur = () => {
+    inputRef.current = null;
     setSelected(null);
   };
 
@@ -32,7 +35,7 @@ export const SpreadSheet = () => {
                 onBlur={onCellBlur}
                 className="column"
               >
-                <Cell selected={selected} id={cell} />
+                <Cell inputRef={inputRef} selected={selected} id={cell} />
               </div>
             ))}
           </div>

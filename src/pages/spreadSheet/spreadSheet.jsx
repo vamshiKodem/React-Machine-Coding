@@ -33,7 +33,6 @@ export const SpreadSheet = () => {
                 key={cell}
                 onDoubleClick={() => onCellClick(cell)}
                 onBlur={onCellBlur}
-                className="column"
               >
                 <Cell inputRef={inputRef} selected={selected} id={cell} />
               </div>

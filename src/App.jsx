@@ -35,6 +35,7 @@ import { store } from "./store";
 import { ReduxExample } from "./pages/reduxExample/reduxExample";
 import { FetchWithCache } from "./customHooks/useFetchWithCache/fetchWithCache";
 import { SpreadSheet } from "./pages/spreadSheet/spreadSheet";
+import { Popup } from "./pages/popup/popup";
 
 const App = () => {
   return (
@@ -74,7 +75,8 @@ const App = () => {
         <Memoization /> */}
         {/* <ReduxExample /> */}
         {/* <FetchWithCache /> */}
-        <SpreadSheet />
+        {/* <SpreadSheet /> */}
+        <Popup />
       </div>
     </Provider>
   );

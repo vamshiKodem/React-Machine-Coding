@@ -7,7 +7,7 @@ export const useInfiniteScroll = () => {
   const GET_PRODUCTS = new URL("https://dummyjson.com/products?limit=15");
   const observer = useRef(null);
 
-  const getProducts = async () => {
+  const getProducts = useCallback(async () => {
     try {
       GET_PRODUCTS.searchParams.set("skip", page * 15);
       const response = await fetch(GET_PRODUCTS);
@@ -16,11 +16,11 @@ export const useInfiniteScroll = () => {
     } catch (err) {
       console.log("error", err);
     }
-  };
+  }, [GET_PRODUCTS, page]);
 
   useEffect(() => {
     getProducts();
-  }, [page]);
+  }, [getProducts, page]);
 
   // this is the way using event listener and document object
   // const scrollAtBottom = () => {

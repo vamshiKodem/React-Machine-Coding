@@ -36,6 +36,7 @@ import { ReduxExample } from "./pages/reduxExample/reduxExample";
 import { FetchWithCache } from "./customHooks/useFetchWithCache/fetchWithCache";
 import { SpreadSheet } from "./pages/spreadSheet/spreadSheet";
 import { Popup } from "./pages/popup/popup";
+import SimpleCache from "./pages/simpleCache/simpleCache";
 
 const App = () => {
   return (
@@ -76,7 +77,8 @@ const App = () => {
         {/* <ReduxExample /> */}
         {/* <FetchWithCache /> */}
         {/* <SpreadSheet /> */}
-        <Popup />
+        {/* <Popup /> */}
+        <SimpleCache />
       </div>
     </Provider>
   );

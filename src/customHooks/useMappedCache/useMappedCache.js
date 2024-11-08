@@ -1,15 +1,16 @@
-const TWO_MINUTES = 5 * 1000;
-export const useSimpleCache = () => {
-  const cache = new Map();
+const TWO_MINUTES = 5 * 1000 * 60;
+const cache = new Map();
 
+export const useMappedCache = () => {
   const setCache = (key, response, duration) => {
     cache.set(key, { data: response, expiry: Date.now() + duration });
   };
 
   const getCache = (key) => {
     const cachedValue = cache.get(key);
+    console.log(cachedValue, key, "get cache");
     if (cachedValue && Date.now() < cachedValue.expiry) {
-      return cachedValue;
+      return cachedValue.data;
     } else {
       return undefined;
     }
@@ -17,13 +18,19 @@ export const useSimpleCache = () => {
 
   const fetchAndCache = async (url, duration = TWO_MINUTES) => {
     const cachedValue = getCache(url);
+    console.log(cachedValue);
     if (cachedValue) {
+      console.log("fetched data from cache");
       return cachedValue;
     } else {
-      const rawResponse = await fetch(url);
-      const response = await rawResponse.json();
-      setCache(url, response, duration);
-      return response;
+      try {
+        console.log("making service call");
+        const rawResponse = await fetch(url);
+        const response = await rawResponse.json();
+        setCache(url, response, duration);
+        return response;
+      } finally {
+      }
     }
   };
 

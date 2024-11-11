@@ -8,7 +8,6 @@ export const useMappedCache = () => {
 
   const getCache = (key) => {
     const cachedValue = cache.get(key);
-    console.log(cachedValue, key, "get cache");
     if (cachedValue && Date.now() < cachedValue.expiry) {
       return cachedValue.data;
     } else {

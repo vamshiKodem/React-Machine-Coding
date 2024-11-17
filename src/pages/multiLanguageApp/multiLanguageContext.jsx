@@ -1,4 +1,5 @@
-import { createContext, useContext, useEffect, useState } from "react";
+import { createContext, useContext, useState } from "react";
+import { languageTypes } from "./model";
 
 import { content } from "./content";
 
@@ -9,7 +10,7 @@ export const useLanguageContext = () => {
 };
 
 export const LanguageProvider = ({ children }) => {
-  const [language, setLanguage] = useState("en");
+  const [language, setLanguage] = useState(languageTypes.en);
   const translatedContent = content[language];
 
   const changeLanguage = (newLanguage) => {

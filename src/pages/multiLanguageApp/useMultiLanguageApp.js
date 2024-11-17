@@ -1,9 +1,5 @@
 import { useLanguageContext } from "./multiLanguageContext";
-
-const languageTypes = {
-  en: "en",
-  es: "es",
-};
+import { languageTypes } from "./model";
 
 export const useMultiLanguageApp = () => {
   const { translatedContent, changeLanguage, language } = useLanguageContext();

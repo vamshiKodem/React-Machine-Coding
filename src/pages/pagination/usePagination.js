@@ -20,7 +20,6 @@ export const usePagination = () => {
   };
 
   useEffect(() => {
-    console.log(selectedPage);
     getProducts();
   }, [selectedPage]);
 

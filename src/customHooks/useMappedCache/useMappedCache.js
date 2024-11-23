@@ -17,7 +17,6 @@ export const useMappedCache = () => {
 
   const fetchAndCache = async (url, duration = TWO_MINUTES) => {
     const cachedValue = getCache(url);
-    console.log(cachedValue);
     if (cachedValue) {
       console.log("fetched data from cache");
       return cachedValue;

@@ -12,7 +12,6 @@ export const useTodo = () => {
       const data = await fetch(GET_TODO);
       const jsonData = await data.json();
       setTodoList(jsonData.todos);
-      console.log(jsonData.todos);
     } catch (err) {
       console.log(err);
     }

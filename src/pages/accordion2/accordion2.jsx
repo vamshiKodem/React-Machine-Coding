@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
+import "./accordion2.css";
 
 const AccordionItem = ({
   title,
@@ -6,15 +7,23 @@ const AccordionItem = ({
   isVisible,
   onAccordionTitleClick,
 }) => {
+  const contentRef = useRef(null);
+
   return (
     <div className="accordion-container">
       <div className="accordion-heading" onClick={onAccordionTitleClick}>
         <h2>{title}</h2>
         <span>{isVisible ? "-" : "+"}</span>
       </div>
-      {isVisible ? (
-        <div className="accordion-description">{description}</div>
-      ) : null}
+      <div
+        ref={contentRef}
+        className={`accordion-description2 ${isVisible ? "open" : null}`}
+        style={{
+          height: isVisible ? `${contentRef.current.scrollHeight}px` : "0px",
+        }}
+      >
+        {description}
+      </div>
     </div>
   );
 };

@@ -13,8 +13,14 @@
   cursor: pointer;
 }
 
-.accordion-description {
-  padding: 10px 20px;
+.accordion-description2 {
   width: 50%;
   background-color: rgb(199, 190, 112);
+  height: 0px;
+  overflow: hidden;
+  transition: height ease-in 0.5ms;
+}
+
+.accordion-description2.open {
+  padding: 20px;
 }

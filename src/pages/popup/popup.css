@@ -16,4 +16,7 @@
   background-color: rgb(231, 224, 224);
   border: solid 1px black;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
